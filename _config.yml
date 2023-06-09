@@ -45,6 +45,7 @@ content:
             - Growing and mentoring team members
             - Management, provisioning, & maintenance of company hardware assets, and network infrastructure
             - Engineered custom Jamf Pro (MDM) deployment pipelines, infrastructure, and scripts for IT & InfoSec
+            - Networked multiple AWS accounts with transitive dns and routing
             - Internal support of employee hardware, software, and local dev environment
             - Support management of Jira ticket board
             - Cloud infrastructure design, testing, and maintenance
