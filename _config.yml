@@ -6,7 +6,7 @@ version: 2
 name: Alexander Rousseau
 title: Cloud Developer & SysAdmin
 email: arousseaumtl@gmail.com
-website: cv.arousseau.net
+website: https://cv.arousseau.net
 
 darkmode: true
 
@@ -70,7 +70,7 @@ content:
           Production Manager
         description: |
             - Shipping management (local, domestic, international)
-            - Warehouse employee scheduling & hiring
+            - Warehouse employee scheduling and hiring
             - Training new hires for production environment
             - Network Infrastructure deployment & maintenance
   - title: Licenses & Certifications
