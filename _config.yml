@@ -28,7 +28,7 @@ content:
         quote: >
           Junior Platform Engineer
         description: |
-            - Management, provisioning, & maintenance of cloud platform infrastructure & applications
+            - Management, provisioning, and maintenance of cloud platform infrastructure & applications
             - Troubleshooting, maintenance, and provisioning of CI/CD deployment pipelines
             - Management and maintenance of platform alarm infrastructure
             - Internal end-user support of platform related inquiries
@@ -41,9 +41,9 @@ content:
         quote: >
           IT Technician
         description: |
-            - Worked under CTO
+            - Worked under CTO to establish IT department
             - Growing and mentoring team members
-            - Management, provisioning, & maintenance of company hardware assets, and network infrastructure
+            - Management, provisioning, and maintenance of company hardware assets, and network infrastructure
             - Engineered custom Jamf Pro (MDM) deployment pipelines, infrastructure, and scripts for IT & InfoSec
             - Networked multiple AWS accounts with transitive dns and routing
             - Internal support of employee hardware, software, and local dev environment
