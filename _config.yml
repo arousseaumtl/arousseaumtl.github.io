@@ -1,0 +1,110 @@
+repository: arousseaumtl/arousseaumtl.github.io
+favicon: images/favicon.ico
+
+version: 2
+
+name: Alexander Rousseau
+title: Cloud Developer & SysAdmin
+email: arousseaumtl@gmail.com
+website: cv.arousseau.net
+
+darkmode: true
+
+github_username:  arousseaumtl
+linkedin_username: alexanderrousseau
+
+summary_profile_image: images/avatar.png
+summary_content: |
+  Experienced IT and Cloud solutions developer and team player who is positive, dedicated and adaptable to dynamic environments. Always motivated to be a part of something great, and make it greater.
+
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Plusgrade
+        link: plusgrade.com
+        caption: September 2022 - Present
+        quote: >
+          Junior Platform Engineer
+        description: |
+            - Management, provisioning, & maintenance of cloud platform infrastructure & applications
+            - Troubleshooting, maintenance, and provisioning of CI/CD deployment pipelines
+            - Management and maintenance of platform alarm infrastructure
+            - Internal end-user support of platform related inquiries
+            - Code repository management
+            - Platform related application development
+      - layout: left
+        title: Plusgrade
+        link: plusgrade.com 
+        caption: July 2019 - September 2022
+        quote: >
+          IT Technician
+        description: |
+            - Worked under CTO
+            - Growing and mentoring team members
+            - Management, provisioning, & maintenance of company hardware assets, and network infrastructure
+            - Engineered custom Jamf Pro (MDM) deployment pipelines, infrastructure, and scripts for IT & InfoSec
+            - Internal support of employee hardware, software, and local dev environment
+            - Support management of Jira ticket board
+            - Cloud infrastructure design, testing, and maintenance
+            - Problem solving through automation and technical capabilities
+            - CI/CD pipelining, packaging & deployment of serverless architecture applications and container orchestration (Docker, etc)
+      - layout: left
+        title: Apple Inc.
+        link: apple.com
+        caption: Jan 2011 - July 2019
+        quote: >
+          Mac Genius
+        description: |
+            - Fast paced customer support (Hardware & Software)
+            - Inspiring colleagues and customers through horizontal leadership, and encouraging technological exploration and learning
+            - Repair & maintenance of Apple equipment (front of house+back of house)
+      - layout: left
+        title: Analogue Media Technologies Inc.
+        link: duplication.ca
+        caption: June 2002 - Sep 2010
+        quote: >
+          Production Manager
+        description: |
+            - Shipping management (local, domestic, international)
+            - Warehouse employee scheduling & hiring
+            - Training new hires for production environment
+            - Network Infrastructure deployment & maintenance
+  - title: Licenses & Certifications
+    layout: list
+    content:
+      - layout: left
+        title: AWS
+        link: https://www.credly.com/badges/292a0937-de8a-4713-a8dd-848f1eff4417
+        caption: Issued July 2021 - Expires July 2024
+        quote: >
+          Certified Solutions Architect – Associate
+      - layout: left
+        title: Apple Inc.
+        caption: Issued February 2011 - No expiry
+        quote: >
+          Certified Macintosh Technician (ACMT)
+
+footer_show_references: true
+references_title: References on request
+
+remote_theme: arousseaumtl/arousseaumtl.github.io
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tagexclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  ]
+
+
