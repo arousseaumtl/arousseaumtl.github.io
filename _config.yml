@@ -28,7 +28,7 @@ content:
         quote: >
           Junior Platform Engineer
         description: |
-            - Management, provisioning, and maintenance of cloud platform infrastructure & applications
+            - Management, provisioning, and maintenance of cloud platform infrastructure and applications
             - Troubleshooting, maintenance, and provisioning of CI/CD deployment pipelines
             - Management and maintenance of platform alarm infrastructure
             - Internal end-user support of platform related inquiries
@@ -44,14 +44,14 @@ content:
             - Worked under CTO to establish IT department
             - Growing and mentoring team members
             - Management, provisioning, and maintenance of company hardware assets, and network infrastructure
-            - Engineered custom Jamf Pro (MDM) deployment pipelines, infrastructure, and scripts for IT & InfoSec
+            - Engineered custom Jamf Pro (MDM) deployment pipelines, infrastructure, and scripts for IT and InfoSec
             - Provisioned and managed Active Directory for virtual machines
             - Networked multiple AWS accounts with transitive dns and routing
             - Internal support of employee hardware, software, and local dev environment
             - Support management of Jira ticket board
             - Cloud infrastructure design, testing, and maintenance
             - Problem solving through automation and technical capabilities
-            - CI/CD pipelining, packaging & deployment of serverless architecture applications and container orchestration (Docker, etc)
+            - CI/CD pipelining, packaging and deployment of serverless architecture applications and container orchestration
       - layout: left
         title: Apple Inc.
         link: apple.com
@@ -59,9 +59,9 @@ content:
         quote: >
           Mac Genius
         description: |
-            - Fast paced customer support (Hardware & Software)
+            - Fast paced customer support (Hardware, Software)
             - Inspiring colleagues and customers through horizontal leadership, and encouraging technological exploration and learning
-            - Repair & maintenance of Apple equipment (front of house+back of house)
+            - Repair and maintenance of Apple equipment (front of house + back of house)
       - layout: left
         title: Analogue Media Technologies Inc.
         link: duplication.ca
@@ -72,7 +72,7 @@ content:
             - Shipping management (local, domestic, international)
             - Warehouse employee scheduling and hiring
             - Training new hires for production environment
-            - Network Infrastructure deployment & maintenance
+            - Network Infrastructure deployment and maintenance
   - title: Licenses & Certifications
     layout: list
     content:
