@@ -42,7 +42,7 @@ content:
       - layout: left
         title: Services
         description: |
-            LDAP, RADIUS, Apache, nginx, haproxy, bind, dhcpd
+            LDAP, Active Directory, RADIUS, Apache, nginx, haproxy, bind, dhcpd
       - layout: left
         title: Monitoring
         description: |
