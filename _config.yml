@@ -69,13 +69,13 @@ content:
         quote: >
           IT Technician
         description: |
-            - Worked under CTO to establish internal IT department
+            - Worked under CTO to create and establish internal IT department
             - Provisioned, packaged, and pipelined cloud deployment of FOSS applications for asset management, and ERP/CRM (snipe-it, dolibarr)
             - Installed and configured on-site network equipment and cabling including routers, switches, wireless access points, and secure cage/rack (Ubiquiti Unifi, ~200 on-site users)
             - Solved a major end-user password expiry complaint by creating and deploying a Slack bot capable of handling service password reset requests, with unanimous user acceptance (Lambda, Python, LDAP, API Gateway)
             - Created and deployed a turn-key solution to configure, secure, and control Macintosh computers delivered to employees direct from re-seller, or from Apple Warehouse, without initial IT handling of machine (Jamf Pro MDM, Shell scripts, API Gateway, S3, Cloudfront, Crowdstrike)
             - Fully automated the deployment and updating of Crowdstrike Falcon binaries to secured distribution repository (Bitbucket CI/CD pipeline, Python, S3)
-            - Created, deployed, and managed regional virtual machine infrastructure to support the hiring of contracted developers in South America and India (Linux, AWS Workspaces, Directory Service, DNS ingress/egress endpoints)
+            - Created, deployed, and managed regional virtual machine infrastructure to support the hiring of contracted developers in South America and India (Linux, AWS Workspaces, Active Directory, DNS ingress/egress endpoints)
             - Deployed and managed site-to-site VPN connection to enable internal access to partner internal API endpoints (IPSEC, Transit Gateway)
       - layout: left
         title: Apple Inc.
