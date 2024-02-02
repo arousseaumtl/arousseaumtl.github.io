@@ -1,0 +1,6 @@
+<div class="container main-container">
+  <h3 id="{{ site.main_title | slugify | default: 'main' }}">{{ site.main_title | default: "main" }}</h3>
+  {% for item in site.data.main %}
+    {% include {{ item.layout | default: 'left' | append: ".html" | prepend: "v1/" }} item=item %}
+  {% endfor %}
+</div>
