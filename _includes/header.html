@@ -6,6 +6,11 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons no-print">
+        <li>
+          <a href="#" onclick="printCV(); return false;" class="button button--sacnite button--round-l">
+            <i class="fas fa-file-pdf" title="Save as PDF"></i>
+          </a>
+        </li>
         {%- if site.dribbble_username -%}
           <li>
             <a target="_blank" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">

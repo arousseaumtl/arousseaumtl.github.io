@@ -8,4 +8,17 @@
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | default: '/assets/favicon.ico' | relative_url }}">
+
+  <script>
+    function printCV() {
+        const elements = document.querySelectorAll('.no-print');
+        elements.forEach(el => el.style.display = 'none');
+
+        window.print();
+        
+        setTimeout(() => {
+            elements.forEach(el => el.style.display = '');
+        }, 100);
+    }
+    </script>
 </head>
