@@ -13,12 +13,10 @@ jobs:
 
       - name: SASS syntax compatibility
         run: |
-          for dir in _sass assets; do
-            for file in "$dir"/*; do
-              if [ -f "$file" ]; then
-                sed -i 's/@use/@import/g' "$file"
-              fi
-            done
+          for file in assets/main.scss _sass/cv.scss; do
+            if [ -f "$file" ]; then
+              sed -i 's/@use/@import/g' "$file"
+            fi
           done
 
       - name: Setup Ruby
@@ -29,7 +27,6 @@ jobs:
 
       - name: Initialize bundle
         run: |
-          rm -f Gemfile.lock
           bundle lock --add-platform "$(ruby -e 'puts RUBY_PLATFORM')"
           bundle install
 
