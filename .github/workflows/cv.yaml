@@ -14,7 +14,16 @@ jobs:
 
       - name: SASS syntax compatibility
         run: |
+          echo "Searching for cv.scss and main.scss files..."
+          find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec echo "Found: {}" \;
+
+          echo "Applying @use to @import replacement..."
           find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec sed -i 's/@use/@import/g' {} +
+
+          echo "Verifying replacements..."
+          find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec grep '@import' {} \; || echo "No @import replacements found"
+
+          echo "Displaying file contents after replacement:"
           find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec echo "Contents of {}:" \; -exec cat {} \;
 
       - name: Setup Ruby
@@ -32,7 +41,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
