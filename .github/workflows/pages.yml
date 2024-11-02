@@ -17,12 +17,6 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
-      - name: Initialize bundle
-        run: |
-          rm -f Gemfile.lock
-          bundle lock --add-platform "$(ruby -e 'puts RUBY_PLATFORM')"
-          bundle install
-
       - name: Convert SASS syntax
         run: |
           for file in _sass/*.scss; do
@@ -30,6 +24,12 @@ jobs:
               sed -i 's/@use /@import /g' "$file"
             fi
           done
+
+      - name: Initialize bundle
+        run: |
+          rm -f Gemfile.lock
+          bundle lock --add-platform "$(ruby -e 'puts RUBY_PLATFORM')"
+          bundle install
 
       - name: Build
         run: bundle exec jekyll build
