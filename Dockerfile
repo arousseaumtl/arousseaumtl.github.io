@@ -4,12 +4,12 @@ ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
-    build-essential \
-    git \
-    ruby-full \
-    ruby-bundler \
-    ruby-dev \
-    zlib1g-dev \
+        build-essential \
+        git \
+        ruby-full \
+        ruby-bundler \
+        ruby-dev \
+        zlib1g-dev \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd app \
     && useradd -m -g app -s /bin/bash app
