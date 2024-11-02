@@ -10,7 +10,7 @@ jobs:
       contents: write
     steps:
       - name: SASS syntax compatibility
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         run: |
           find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec sed -i 's/@use/@import/g' {} +
           find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec echo "Contents of {}:" \; -exec cat {} \;
