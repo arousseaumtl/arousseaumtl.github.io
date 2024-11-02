@@ -17,7 +17,14 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
-      - name: SASS syntax compatibility (for github-pages)
+      - name: Initialize bundle
+        run: |
+          rm -f Gemfile.lock
+          bundle lock --add-platform "$(ruby -e 'puts RUBY_PLATFORM')"
+          bundle install
+
+      # Convert @use to @import after Ruby setup
+      - name: Convert SASS syntax
         run: |
           for file in _sass/*.scss; do
             if [[ -f "$file" ]]; then
@@ -26,7 +33,7 @@ jobs:
           done
 
       - name: Build
-        run: bundle install && bundle exec jekyll build
+        run: bundle exec jekyll build
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
