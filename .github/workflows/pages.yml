@@ -13,10 +13,12 @@ jobs:
 
       - name: SASS syntax compatibility
         run: |
-          for file in _sass/*; do
-            if [ -f "$file" ]; then
-              sed -i 's/@use/@import/g' "$file"
-            fi
+          for dir in _sass assets; do
+            for file in "$dir"/*; do
+              if [ -f "$file" ]; then
+                sed -i 's/@use/@import/g' "$file"
+              fi
+            done
           done
 
       - name: Setup Ruby
