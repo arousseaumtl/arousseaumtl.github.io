@@ -12,7 +12,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Convert SASS syntax
+
+      - name: SASS syntax compatibility
         run: |
           for file in _sass/*.scss; do
             if [[ -f "$file" ]]; then
@@ -26,8 +27,13 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
+      - name: Add platform
+        run: bundle lock --add-platform x86_64-linux
+
       - name: Build
-        run: bundle install && bundle exec jekyll build
+        run: |
+          bundle install
+          bundle exec jekyll build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
