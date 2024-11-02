@@ -10,20 +10,20 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      
+
+      - name: SASS syntax compatibility
+        run: |
+          for file in _sass/*; do
+            if [ -f "$file" ]; then
+              sed -i 's/@use/@import/g' "$file"
+            fi
+          done
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
-
-      - name: Convert SASS syntax
-        run: |
-          for file in _sass/*.scss; do
-            if [[ -f "$file" ]]; then
-              sed -i 's/@use /@import /g' "$file"
-            fi
-          done
 
       - name: Initialize bundle
         run: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Build
         run: bundle exec jekyll build
-        
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
