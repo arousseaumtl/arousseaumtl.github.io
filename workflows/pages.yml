@@ -9,12 +9,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-
       - name: SASS syntax compatibility
+      - uses: actions/checkout@v4
         run: |
           find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec sed -i 's/@use/@import/g' {} +
-
+          find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec echo "Contents of {}:" \; -exec cat {} \;
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
