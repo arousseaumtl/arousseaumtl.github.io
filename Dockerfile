@@ -18,7 +18,8 @@ WORKDIR /home/app
 
 COPY --chown=app:app Gemfile.dev Gemfile
 
-RUN bundle install
+RUN bundle lock --add-platform "$(ruby -e 'puts RUBY_PLATFORM')" \
+    && bundle install
 
 USER app
 
