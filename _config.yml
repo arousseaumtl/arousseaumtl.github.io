@@ -131,15 +131,12 @@ content:
 footer_show_references: true
 references_title: References on request
 
-remote_theme: arousseaumtl/arousseaumtl.github.io
-
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
 exclude:
   - Gemfile
