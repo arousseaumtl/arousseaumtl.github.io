@@ -25,6 +25,8 @@ USER app
 
 COPY --chown=app:app . .
 
+RUN find . -type f \( -name "cv.scss" -o -name "main.scss" \) -exec sed -i 's/@import/@use/g' {} +
+
 EXPOSE 4000 35729
 
 CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--trace", "--livereload"]

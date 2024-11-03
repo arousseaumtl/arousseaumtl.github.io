@@ -21,13 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: SASS syntax compatibility
-        run: |
-          echo "Applying @use to @import replacement..."
-          find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec sed -i 's/@use/@import/g' {} +
-          echo "Displaying file contents after replacement:"
-          find "${{ github.workspace }}" -type f \( -name "cv.scss" -o -name "main.scss" \) -exec echo "Contents of {}:" \; -exec cat {} \;
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
