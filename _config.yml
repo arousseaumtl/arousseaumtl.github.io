@@ -6,7 +6,7 @@ version: 2
 name: Alexander Rousseau
 title: Cloud Developer & SysAdmin
 email: alex@arousseau.net
-website: https://cv.arousseau.net
+website: https://arousseau.net
 
 darkmode: true
 
@@ -48,7 +48,7 @@ content:
       - layout: left
         title: Monitoring
         description: |
-            Prometheus, Alertmanager, Cloudwatch
+            Prometheus, Alertmanager, Cloudwatch, Grafana
   - title: Experience
     layout: list
     content:
@@ -60,9 +60,10 @@ content:
           Delivery & Support Specialist
         description: |
             - Top level technical support for Genetec certified field engineers, integrators and product end-users
+            - Troubleshooting and bug / issue inference with develeopement team
             - Configuration, installation and troubleshooting of Genetec AutoVu license plate recognition systems (ALPR)
             - Cloud virtual machine maintenance and support (Azure, Windows Server)
-            - In-house tool development, scripting, and proof-of-concept deployments
+            - In-house tool development, scripting, and proof-of-concept R&D deployments
       - layout: left
         title: Plusgrade
         link: plusgrade.com
@@ -112,7 +113,7 @@ content:
             - Training new hires for production environment
             - Network Infrastructure deployment and maintenance
             - Linux server deployment and maintenance (www, fileserver, VPN)
-            - Legacy OS/2 Warp and eComStation deployment and maintenance (email)
+            - OS/2 Warp / eComStation deployment and maintenance (legacy server)
   - title: Licenses & Certifications
     layout: list
     content:
