@@ -4,7 +4,7 @@ favicon: images/favicon.ico
 version: 2
 
 name: Alexander Rousseau
-title: Cloud Developer & SysAdmin
+title: Senior Cloud Engineer
 email: alex@arousseau.net
 website: https://arousseau.net
 
@@ -15,43 +15,55 @@ linkedin_username: arousseaumtl
 
 #summary_profile_image: images/avatar.png
 summary_content: |
-  Versatile IT and Cloud solutions developer with a track record of successfully navigating dynamic environments. A collaborative team player,
-  I bring experience and a positive, dedicated mindset to every project. Motivated by the desire to contribute to greatness, I am adept at creating solutions
-  and adapting to emerging technologies. Eager to leverage my skills in a role that values innovation, teamwork, and continuous improvement.
+  Senior Cloud Engineer with 15+ years of technical experience spanning AI/ML deployment, cloud architecture,
+  and scalable infrastructure. Specialized in building production AI/ML systems on AWS/Azure, with deep
+  expertise in platform engineering, automation, and system integration. Pragmatic approach to problem-solving
+  with a strong understanding of when to build custom solutions versus leveraging existing tools. Proven track
+  record of architecting and implementing AI-powered platforms that drive operational efficiency and cost
+  optimization.
 
 content:
   - title: Technical Knowledge
     layout: list
     content:
       - layout: left
-        title: Cloud
-        quote: >
-          Amazon Web Services
+        title: Cloud Platforms
         description: |
-            Lambda, EC2, VPC, S3, ECS, RDS, SES, CodeBuild, CodeCommit, ECR, API Gateway, Transit Gateway, Route53, Cloudfront, Elasticache, DynamoDB, Workspaces, Directory Service, Cloudwatch
+            AWS and Azure including compute, networking, storage, serverless, and infrastructure-as-code
       - layout: left
-        title: Infrastructure
+        title: AI/ML Engineering
         description: |
-            Terraform, Pulumi, Docker
+            Model deployment, fine-tuning, and production integration
       - layout: left
-        title: Coding
+        title: Programming
         description: |
-            Python, Shell, NodeJS, Golang
+            Python, Shell scripting, NodeJS, Go, Java
       - layout: left
-        title: Platforms
+        title: Platform Engineering / DevOps
         description: |
-            Linux, Windows, MacOS, Unix, OS/2 Warp/eComStation
+            Terraform, Pulumi, CI/CD pipelines, container orchestration, automation frameworks
       - layout: left
-        title: Services
+        title: Enterprise Integration
         description: |
-            LDAP, Active Directory, RADIUS, Apache, nginx, haproxy, bind, dhcpd
+            API design, telephony systems, directory services, identity management
       - layout: left
-        title: Monitoring
+        title: Observability
         description: |
-            Prometheus, Alertmanager, Cloudwatch, Grafana
+            Distributed system monitoring, alerting, and performance optimization
   - title: Experience
     layout: list
     content:
+      - layout: left
+        title: BlueLattice Inc.
+        link: bluelattice.ca
+        caption: January 2025 - Present
+        quote: >
+          Senior Consultant
+        description: |
+            - Architected, developed, and deployed fully automated AI-powered call center service with in-house models for transcription, analysis, summarization, and speaker diarization (production)
+            - Developed ingestion and queuing systems for live management of call and lead events (production)
+            - Implemented enterprise telephony architecture including Microsoft Teams Direct Routing, Session Border Controller, and Twilio SIP Trunk integration
+            - Built in-house AWS automated instance scheduler greatly reducing multiple environment costs through smart resource management, for exceptional user experience (production)
       - layout: left
         title: Genetec
         link: genetec.com
@@ -60,7 +72,7 @@ content:
           Delivery & Support Specialist
         description: |
             - Top level technical support for Genetec certified field engineers, integrators and product end-users
-            - Troubleshooting and bug / issue inference with develeopement team
+            - Troubleshooting and bug / issue inference in conjunction with development team
             - Configuration, installation and troubleshooting of Genetec AutoVu license plate recognition systems (ALPR)
             - Cloud virtual machine maintenance and support (Azure, Windows Server)
             - In-house tool development, scripting, and proof-of-concept R&D deployments
@@ -71,14 +83,14 @@ content:
         quote: >
           Platform Engineer
         description: |
-            - Created and deployed an automation API that handles credit card OTP codes for use in QA testing pipelines (Terrafrom, Lambda, Python, API Gateway, AWS SES)
+            - Created and deployed an automation API that handles credit card OTP codes for use in QA testing pipelines (Terraform, Lambda, Python, API Gateway, AWS SES)
             - Massively reduced build time of internal services by migrating from CodeBuild, and Ansible to Bitbucket CI/CD pipeline, Terraform, and EC2 user_data bootstrap scripts
             - Revamped Prometheus and Alertmanager configurations to optimize received alert information
             - Optimized and adjusted service build pipelines to fix intermittent out of memory errors during testing (Terraform, JVM, NodeJS, Docker)
             - Internal end-user support of platform related inquiries (Slack platform channels, JIRA board)
       - layout: left
         title: Plusgrade
-        link: plusgrade.com 
+        link: plusgrade.com
         caption: July 2019 - September 2022
         quote: >
           IT Technician
@@ -119,10 +131,9 @@ content:
     content:
       - layout: left
         title: AWS
-        link: https://www.credly.com/badges/292a0937-de8a-4713-a8dd-848f1eff4417
-        caption: Issued July 2021 - Expires July 2024
+        caption: Issued July 2021
         quote: >
-          Certified Solutions Architect – Associate
+          Certified Solutions Architect - Associate
       - layout: left
         title: Apple Inc.
         caption: Issued February 2011 - No expiry
